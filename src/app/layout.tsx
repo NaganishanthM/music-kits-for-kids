@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Music Kits for Kids",
-  description: "Description",
+  description: "A youth-led nonprofit providing music kits for students",
 };
 
 export default function RootLayout({

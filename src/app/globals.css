@@ -1,26 +1,60 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #d08c8c;
+  --background: #fff8f8;
+  --light-background: #ffffff;
+
+  --text-xs: clamp(0.75rem, 2vw, 0.825rem);
+  --text-sm: clamp(0.875rem, 2.5vw, 1.0125rem);
+  --text-base: clamp(1rem, 3vw, 1.2rem);
+  --text-lg: clamp(1.125rem, 3.5vw, 1.3875rem);
+  --text-xl: clamp(1.25rem, 4vw, 1.575rem);
+  --text-2xl: clamp(1.5rem, 4.5vw, 1.95rem);
+  --text-3xl: clamp(1.875rem, 5vw, 2.5125rem);
+  --text-4xl: clamp(2.25rem, 6vw, 3.075rem);
+  --text-5xl: clamp(3rem, 8vw, 4.2rem);
+  --text-6xl: clamp(3.75rem, 10vw, 5.325rem);
+  --text-7xl: clamp(4.5rem, 12vw, 6.45rem);
+  --text-8xl: clamp(6rem, 15vw, 8.7rem);
+  --text-9xl: clamp(8rem, 20vw, 11.7rem);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+h1 {
+  font-size: var(--text-6xl);
+}
+h2 {
+  font-size: var(--text-5xl);
+}
+h3 {
+  font-size: var(--text-4xl);
+}
+h4 {
+  font-size: var(--text-3xl);
+}
+h5 {
+  font-size: var(--text-2xl);
+}
+h6 {
+  font-size: var(--text-xl);
+}
+
+p {
+  font-size: var(--text-base);
+}
+small {
+  font-size: var(--text-sm);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-libre-bodoni), serif;
+  overflow-x: hidden;
+  line-height: 1.4;
 }

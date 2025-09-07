@@ -61,7 +61,7 @@ export default function Home() {
                 <p className="mt-8 leading-relaxed">
                   Share your musical skills by teaching children one-on-one. We
                   provide support and materials to help you make a meaningful
-                  impact in a child's musical journey.
+                  impact in a child&apos;s musical journey.
                 </p>
               </div>
               <div className="h-64 w-64 ml-10 bg-gray-300 rounded-lg"></div>

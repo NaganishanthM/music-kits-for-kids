@@ -1,8 +1,7 @@
+import Header from "@/components/Header";
 import type { Metadata } from "next";
 import { Libre_Bodoni } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
-
 
 const libreBodoni = Libre_Bodoni({
   variable: "--font-libre-bodoni",
